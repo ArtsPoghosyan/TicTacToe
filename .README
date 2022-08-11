@@ -1,6 +1,6 @@
 # TicTacToe
 
-1. Բացել տեռմինալ Clicker պապկայի մեջ
+1. Բացել տեռմինալ TicTacToe պապկայի մեջ
 2. Տեռմինալի մեջ գրել npm install հետո npm run start
 
 --և google-ում ավտոմատ կբացվի http://localhost:8080/ կայքը--
