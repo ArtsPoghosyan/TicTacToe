@@ -1,0 +1,99 @@
+@import "./plugins/vars.scss";
+@import "./plugins/family.scss";
+@import "./plugins/reponsive.scss";
+
+.game4x4{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    @media screen and (min-width: 250px) and (max-width: 425px){
+        width: 300px;
+        height: 300px;
+    }
+    @media screen and (min-width: 426px) and (max-width: 600px) {
+        width: 400px;
+        height: 400px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+        width: 300px;
+        height: 300px;
+    }
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+        width: 350px;
+        height: 350px;
+    }
+    @media screen and (min-width: 1201px) and (max-width: 1500px) {
+        width: 400px;
+        height: 400px;
+    }
+    @media screen and (min-width: 1900px) and (max-width: 2200px) {
+        width: 600px;
+        height: 600px;
+    }
+    @media screen and (min-width: 2201px) and (max-width: 2400px) {
+        width: 700px;
+        height: 700px;
+    }
+    @media screen and (min-width: 2401px) and (max-width: 2560px) {
+        width: 800px;
+        height: 800px;
+    }
+    #winerBlock{
+        img{
+            opacity: 1;
+            width: 70%;
+            height: 70%;
+        }       
+    }
+    div{
+        width: 23.5%;
+        height: 24.2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: cell;
+        @media screen and (min-width: 250px) and (max-width: 425px){
+            width: 21.11%;
+        }
+        @media screen and (min-width: 426px) and (max-width: 600px) {
+            width: 21.66%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 900px) {
+            width: 20%;
+        }
+        @media screen and (min-width: 901px) and (max-width: 1200px) {
+            width: 21.1%;
+        }
+        @media screen and (min-width: 1201px) and (max-width: 1500px) {
+            width: 21.66%;
+        }
+        @media screen and (min-width: 1900px) and (max-width: 2200px) {
+            width: 22.2%;
+        }
+        @media screen and (min-width: 2201px) and (max-width: 2400px) {
+            width: 22.38%;
+        }
+        @media screen and (min-width: 2401px) and (max-width: 2560px) {
+            width: 22.5%;
+        }
+        img{
+            width: 60%;
+            height: 60%;
+            opacity: 0.9;
+        }
+    }
+    div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(9), div:nth-child(10), div:nth-child(11){
+        border-right: $border;
+        border-bottom: $border;
+    }
+    div:nth-child(4), div:nth-child(8), div:nth-child(12){
+        border-bottom: $border;
+    }
+    div:nth-child(13), div:nth-child(14), div:nth-child(15){
+        border-right: $border;
+    }
+}
